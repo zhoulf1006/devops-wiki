@@ -13,8 +13,12 @@ jobs:
         with:
           node-version: '16'
           cache: npm
-      - name: deploy to pages
+      - name: install npm packages
         run: |
           npm install
-          npm build
+      - name: build project
+        run: |
+          npm run build
+      - name: deploy to github pages
+        run: |
           GIT_USER=zhoulf1006 USE_SSH=true npm run deploy
