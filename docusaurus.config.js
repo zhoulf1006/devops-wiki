@@ -3,15 +3,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'DEVOPS WIKI',
+  tagline: 'loong\'s devops wiki',
+  url: 'https://zhoulf1006.github.io/devops-wiki',
+  baseUrl: '/devops-wiki/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'zhoulf1006', // Usually your GitHub org/user name.
+  projectName: 'devops-wiki', // Usually your repo name.
+  plugins: ['@docusaurus/theme-live-codeblock'],
   themeConfig: {
     navbar: {
       title: 'My Site',
@@ -33,6 +34,13 @@ module.exports = {
           position: 'right',
         },
       ],
+    },
+    liveCodeBlock: {
+      /**
+       * The position of the live playground, above or under the editor
+       * Possible values: "top" | "bottom"
+       */
+      playgroundPosition: 'bottom',
     },
     footer: {
       style: 'dark',

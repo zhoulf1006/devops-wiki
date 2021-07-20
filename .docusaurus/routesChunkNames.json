@@ -1,157 +1,135 @@
 {
-  "/-deb": {
-    "component": "component---site-src-pages-index-jsc-4-f-f99",
-    "config": "config---5-e-9-4f3"
+  "/devops-wiki/-a74": {
+    "component": "c4f5d8e4",
+    "config": "5e9f5e1a"
   },
-  "/__docusaurus/debug-3d6": {
-    "component": "component---theme-debug-config-23-a-2ff"
-  },
-  "/__docusaurus/debug/config-914": {
-    "component": "component---theme-debug-config-23-a-2ff"
-  },
-  "/__docusaurus/debug/content-c28": {
-    "component": "component---theme-debug-contentba-8-ce7",
-    "allContent": "allContent---docusaurus-debug-content-246-9aa"
-  },
-  "/__docusaurus/debug/globalData-3cf": {
-    "component": "component---theme-debug-global-dataede-0fa"
-  },
-  "/__docusaurus/debug/metadata-31b": {
-    "component": "component---theme-debug-site-metadata-68-e-3d4"
-  },
-  "/__docusaurus/debug/registry-0da": {
-    "component": "component---theme-debug-registry-679-501"
-  },
-  "/__docusaurus/debug/routes-244": {
-    "component": "component---theme-debug-routes-946-699"
-  },
-  "/blog-6b1": {
-    "component": "component---theme-blog-list-pagea-6-a-7ba",
-    "sidebar": "sidebar---blog-3-bd-445",
+  "/devops-wiki/blog-73a": {
+    "component": "a6aa9e1f",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blogaf-1-856"
+        "content": "af172acd"
       },
       {
-        "content": "content---blog-357-22b"
+        "content": "3570154c"
       },
       {
-        "content": "content---blog-8-e-9-35c"
+        "content": "8e9f0a8a"
       }
     ],
-    "metadata": "metadata---blogb-2-b-df1"
+    "metadata": "1205270a"
   },
-  "/blog/hello-world-e90": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---blog-3-bd-445",
-    "content": "content---blog-hello-worldd-61-086"
+  "/devops-wiki/blog/hello-world-828": {
+    "component": "ccc49370",
+    "sidebar": "814f3328",
+    "content": "d610846f"
   },
-  "/blog/hola-c51": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---blog-3-bd-445",
-    "content": "content---blog-holabdd-150"
+  "/devops-wiki/blog/hola-c96": {
+    "component": "ccc49370",
+    "sidebar": "814f3328",
+    "content": "bdd709f1"
   },
-  "/blog/tags-2f8": {
-    "component": "component---theme-blog-tags-list-page-01-a-d0b",
-    "sidebar": "sidebar---blog-3-bd-445",
-    "tags": "tags---blog-tagsa-70-da2"
+  "/devops-wiki/blog/tags-c7f": {
+    "component": "01a85c17",
+    "sidebar": "814f3328",
+    "tags": "1efddbae"
   },
-  "/blog/tags/docusaurus-e21": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "sidebar": "sidebar---blog-3-bd-445",
+  "/devops-wiki/blog/tags/docusaurus-f22": {
+    "component": "6875c492",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blogaf-1-856"
+        "content": "af172acd"
       },
       {
-        "content": "content---blog-357-22b"
+        "content": "3570154c"
       },
       {
-        "content": "content---blog-8-e-9-35c"
+        "content": "8e9f0a8a"
       }
     ],
-    "metadata": "metadata---blog-tags-docusaurusa-80-728"
+    "metadata": "f724d62c"
   },
-  "/blog/tags/facebook-3b5": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "sidebar": "sidebar---blog-3-bd-445",
+  "/devops-wiki/blog/tags/facebook-e95": {
+    "component": "6875c492",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blogaf-1-856"
+        "content": "af172acd"
       }
     ],
-    "metadata": "metadata---blog-tags-facebook-031-c52"
+    "metadata": "baa7b4e5"
   },
-  "/blog/tags/hello-c06": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "sidebar": "sidebar---blog-3-bd-445",
+  "/devops-wiki/blog/tags/hello-16d": {
+    "component": "6875c492",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blogaf-1-856"
+        "content": "af172acd"
       },
       {
-        "content": "content---blog-357-22b"
+        "content": "3570154c"
       }
     ],
-    "metadata": "metadata---blog-tags-hello-30-a-bed"
+    "metadata": "2c0b1f1a"
   },
-  "/blog/tags/hola-e88": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "sidebar": "sidebar---blog-3-bd-445",
+  "/devops-wiki/blog/tags/hola-b16": {
+    "component": "6875c492",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-8-e-9-35c"
+        "content": "8e9f0a8a"
       }
     ],
-    "metadata": "metadata---blog-tags-holae-16-18a"
+    "metadata": "d466978e"
   },
-  "/blog/welcome-dd8": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---blog-3-bd-445",
-    "content": "content---blog-welcome-286-e55"
+  "/devops-wiki/blog/welcome-fee": {
+    "component": "ccc49370",
+    "sidebar": "814f3328",
+    "content": "2868cdab"
   },
-  "/markdown-page-be1": {
-    "component": "component---theme-mdx-page-1-f-3-b90",
-    "content": "content---markdown-page-393-028"
+  "/devops-wiki/markdown-page-bcb": {
+    "component": "1f391b9e",
+    "content": "393be207"
   },
-  "/docs-18a": {
-    "component": "component---theme-doc-page-1-be-9be",
-    "versionMetadata": "versionMetadata---docs-935-398"
+  "/devops-wiki/docs-4f4": {
+    "component": "1be78505",
+    "versionMetadata": "935f2afb"
   },
-  "/docs/intro-e84": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-intro-0-e-3-be1"
+  "/devops-wiki/docs/intro-409": {
+    "component": "17896441",
+    "content": "0e384e19"
   },
-  "/docs/tutorial-basics/congratulations-7ef": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-congratulations-822-958"
+  "/devops-wiki/docs/tutorial-basics/congratulations-136": {
+    "component": "17896441",
+    "content": "822bd8ab"
   },
-  "/docs/tutorial-basics/create-a-blog-post-2c8": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-blog-post-533-e85"
+  "/devops-wiki/docs/tutorial-basics/create-a-blog-post-a2b": {
+    "component": "17896441",
+    "content": "533a09ca"
   },
-  "/docs/tutorial-basics/create-a-document-f0d": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-document-1-e-4-078"
+  "/devops-wiki/docs/tutorial-basics/create-a-document-f5d": {
+    "component": "17896441",
+    "content": "1e4232ab"
   },
-  "/docs/tutorial-basics/create-a-page-ca5": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-page-5-c-8-e19"
+  "/devops-wiki/docs/tutorial-basics/create-a-page-23d": {
+    "component": "17896441",
+    "content": "5c868d36"
   },
-  "/docs/tutorial-basics/deploy-your-site-508": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-deploy-your-sitef-55-a3f"
+  "/devops-wiki/docs/tutorial-basics/deploy-your-site-25e": {
+    "component": "17896441",
+    "content": "f55d3e7a"
   },
-  "/docs/tutorial-basics/markdown-features-f90": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-markdown-features-18-c-a79"
+  "/devops-wiki/docs/tutorial-basics/markdown-features-08b": {
+    "component": "17896441",
+    "content": "18c41134"
   },
-  "/docs/tutorial-extras/manage-docs-versions-d64": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-manage-docs-versionsdff-6d4"
+  "/devops-wiki/docs/tutorial-extras/manage-docs-versions-14f": {
+    "component": "17896441",
+    "content": "dff1c289"
   },
-  "/docs/tutorial-extras/translate-your-site-16a": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-translate-your-sitee-44-ddf"
+  "/devops-wiki/docs/tutorial-extras/translate-your-site-538": {
+    "component": "17896441",
+    "content": "e44a2883"
   }
 }

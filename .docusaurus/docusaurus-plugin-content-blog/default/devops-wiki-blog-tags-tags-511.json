@@ -1,0 +1,30 @@
+{
+  "facebook": {
+    "allTagsPath": "/devops-wiki/blog/tags",
+    "slug": "facebook",
+    "name": "facebook",
+    "count": 1,
+    "permalink": "/devops-wiki/blog/tags/facebook"
+  },
+  "hello": {
+    "allTagsPath": "/devops-wiki/blog/tags",
+    "slug": "hello",
+    "name": "hello",
+    "count": 2,
+    "permalink": "/devops-wiki/blog/tags/hello"
+  },
+  "docusaurus": {
+    "allTagsPath": "/devops-wiki/blog/tags",
+    "slug": "docusaurus",
+    "name": "docusaurus",
+    "count": 3,
+    "permalink": "/devops-wiki/blog/tags/docusaurus"
+  },
+  "hola": {
+    "allTagsPath": "/devops-wiki/blog/tags",
+    "slug": "hola",
+    "name": "hola",
+    "count": 1,
+    "permalink": "/devops-wiki/blog/tags/hola"
+  }
+}

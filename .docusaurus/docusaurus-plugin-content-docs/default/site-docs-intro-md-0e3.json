@@ -7,7 +7,7 @@
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
-  "permalink": "/docs/intro",
+  "permalink": "/devops-wiki/docs/intro",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/intro.md",
   "version": "current",
   "sidebarPosition": 1,
@@ -17,6 +17,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Create a Page",
-    "permalink": "/docs/tutorial-basics/create-a-page"
+    "permalink": "/devops-wiki/docs/tutorial-basics/create-a-page"
   }
 }
