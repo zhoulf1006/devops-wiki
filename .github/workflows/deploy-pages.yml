@@ -21,4 +21,5 @@ jobs:
           npm run build
       - name: deploy to github pages
         run: |
+          git config --global user.name "zhoulf1006"
           GIT_USER=zhoulf1006 GIT_PASS=${{ secrets.CICD_TOKEN }} npm run deploy
