@@ -9,7 +9,16 @@ export default {
   "organizationName": "zhoulf1006",
   "projectName": "devops-wiki",
   "plugins": [
-    "@docusaurus/theme-live-codeblock"
+    "@docusaurus/theme-live-codeblock",
+    [
+      "/Users/loong/aloong/devops-wiki/node_modules/docusaurus-lunr-search/src/index.js",
+      {
+        "languages": [
+          "en",
+          "zh"
+        ]
+      }
+    ]
   ],
   "themeConfig": {
     "navbar": {

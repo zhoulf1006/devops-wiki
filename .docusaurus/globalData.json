@@ -1,4 +1,12 @@
 {
+  "docusaurus-lunr-search": {
+    "default": {
+      "fileNames": {
+        "searchDoc": "search-doc-1627021775059.json",
+        "lunrIndex": "lunr-index-1627021775059.json"
+      }
+    }
+  },
   "docusaurus-plugin-content-docs": {
     "default": {
       "path": "/devops-wiki/docs",

@@ -31,6 +31,11 @@
       "type": "package",
       "name": "@docusaurus/theme-live-codeblock",
       "version": "2.0.0-beta.3"
+    },
+    "docusaurus-lunr-search": {
+      "type": "package",
+      "name": "docusaurus-lunr-search",
+      "version": "2.1.14"
     }
   }
 }

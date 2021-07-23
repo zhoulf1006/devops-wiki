@@ -12,7 +12,11 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'zhoulf1006', // Usually your GitHub org/user name.
   projectName: 'devops-wiki', // Usually your repo name.
-  plugins: ['@docusaurus/theme-live-codeblock'],
+  plugins: ['@docusaurus/theme-live-codeblock',
+    [require.resolve('docusaurus-lunr-search'), {
+    languages: ['en', 'zh'] // language codes
+  }],
+  ],
   themeConfig: {
     navbar: {
       title: 'My Site',
