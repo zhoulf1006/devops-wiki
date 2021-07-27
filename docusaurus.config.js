@@ -31,6 +31,12 @@ module.exports = {
           position: 'left',
           label: 'Tutorial',
         },
+        {
+          to: 'docs/test1/test11',
+          activeBasePath: 'docs/test1',
+          position: 'left',
+          label: 'AKS',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/zhoulf1006/devops-wiki',
