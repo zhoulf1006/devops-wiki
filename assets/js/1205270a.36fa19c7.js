@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevops_wiki=self.webpackChunkdevops_wiki||[]).push([[113],{2577:function(e){e.exports=JSON.parse('{"permalink":"/devops-wiki/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

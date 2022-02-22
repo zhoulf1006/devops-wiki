@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevops_wiki=self.webpackChunkdevops_wiki||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/devops-wiki/blog/welcome"},{"title":"Hello","permalink":"/devops-wiki/blog/hello-world"},{"title":"Hola","permalink":"/devops-wiki/blog/hola"}]}')}}]);

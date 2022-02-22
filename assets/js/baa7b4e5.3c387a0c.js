@@ -1,1 +1,0 @@
-(self.webpackChunkdevops_wiki=self.webpackChunkdevops_wiki||[]).push([[76],{4516:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/devops-wiki/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/devops-wiki/blog/tags/facebook"}')}}]);

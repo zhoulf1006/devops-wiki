@@ -1,1 +1,0 @@
-(self.webpackChunkdevops_wiki=self.webpackChunkdevops_wiki||[]).push([[206],{5331:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/devops-wiki/blog/tags","slug":"docusaurus","name":"docusaurus","count":3,"permalink":"/devops-wiki/blog/tags/docusaurus"}')}}]);
