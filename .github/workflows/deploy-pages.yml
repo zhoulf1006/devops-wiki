@@ -16,9 +16,9 @@ jobs:
       - name: install npm packages
         run: |
           npm install
-      - name: build project
-        run: |
-          npm run build
+      # - name: build project
+      #   run: |
+      #     npm run build
       - name: deploy to github pages
         run: |
           git config --global user.name "zhoulf1006"

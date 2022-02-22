@@ -1,0 +1,115 @@
+Docker installation differs on different linux editions.
+
+## Install on CentOS7
+CICD machine including selfci vms on aws and deploy vms on azure are CentOS7.
+
+### Install with `yum`
+```bash
+yum install -y yum-utils device-mapper-persistent-data lvm2
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum install -y docker-ce docker-ce-cli containerd.io
+```
+
+**You may met the following errors**
+```bash
+Error: Package: audit-libs-python-2.8.5-4.el7.x86_64 (base)
+           Requires: audit-libs(x86-64) = 2.8.5-4.el7
+           Installed: audit-libs-2.7.6-3.el7.x86_64 (@anaconda)
+               audit-libs(x86-64) = 2.7.6-3.el7
+           Available: audit-libs-2.4.5-6.el6.x86_64 (aloong-repo)
+               audit-libs(x86-64) = 2.4.5-6.el6
+Error: Package: policycoreutils-python-2.5-34.el7.x86_64 (base)
+           Requires: policycoreutils = 2.5-34.el7
+           Installed: policycoreutils-2.5-33.el7.x86_64 (@base)
+               policycoreutils = 2.5-33.el7
+           Available: policycoreutils-2.0.83-30.1.el6_8.x86_64 (aloong-repo)
+               policycoreutils = 2.0.83-30.1.el6_8
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+ ```
+
+**Download package and install dependencies**
+```bash
+wget https://rpmfind.net/linux/centos/7.9.2009/os/x86_64/Packages/audit-libs-2.8.5-4.el7.x86_64.rpm
+wget https://rpmfind.net/linux/centos/7.9.2009/os/x86_64/Packages/policycoreutils-2.5-34.el7.x86_64.rpm
+wget https://rpmfind.net/linux/centos/7.9.2009/os/x86_64/Packages/libselinux-utils-2.5-15.el7.x86_64.rpm
+wget https://rpmfind.net/linux/centos/7.9.2009/os/x86_64/Packages/libsepol-2.5-10.el7.x86_64.rpm
+wget https://rpmfind.net/linux/centos/7.9.2009/os/x86_64/Packages/libselinux-2.5-15.el7.x86_64.rpm
+wget https://rpmfind.net/linux/centos/7.9.2009/os/x86_64/Packages/libsemanage-2.5-14.el7.x86_64.rpm
+
+# install sequence:
+libsepol -> libselinux -> libsemanage -> libselinux-utils -> policycoreutils
+
+yum install -y libsepol-2.5-10.el7.x86_64.rpm libselinux-2.5-15.el7.x86_64.rpm libsemanage-2.5-14.el7.x86_64.rpm libselinux-utils-2.5-15.el7.x86_64.rpm policycoreutils-2.5-34.el7.x86_64.rpm audit-libs-2.8.5-4.el7.x86_64.rpm
+```
+
+**Retry install docker**
+```bash
+yum install -y docker-ce docker-ce-cli containerd.io
+```
+
+**Disable docker repo after successful installation**
+```bash
+sudo yum-config-manager --disable docker-ce-stable
+```
+
+### Config & Start docker
+```bash
+mkdir -p /etc/docker /data/tools/docker
+cat << EOF >/etc/docker/daemon.json
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "data-root": "data/tools/docker",
+  "log-driver": "json-file",
+  "log-opts": {
+  "max-size": "100m"
+  },
+    "storage-driver": "overlay2",
+    "storage-opts": [
+        "overlay2.override_kernel_check=true"
+    ]
+  }
+}
+EOF
+
+#start and enable docker.service
+systemctl daemon-reload
+systemctl start docker && systemctl enable docker
+sleep 5
+#check status
+systemctl status docker
+```
+
+## Install on Ubuntu
+Some small projects and new machines are ubuntu linux.
+
+### Install with `apt-get`
+```bash
+sudo apt-get update
+sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+newgrp docker
+```
+
+### Check installation
+```bash
+docker -v
+```
+
